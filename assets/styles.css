@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Vysokepismo';
+  src: url('Vysokepismo-Regular.woff2') format('woff2'),
+      url('Vysokepismo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+ 
+}
+
+body, html {
+  width: 100%;
+}
+
+* {
+  font-size: 60px;
+  font-family: 'Vysokepismo';
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 200%;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: -7px;
+}
+
+.postavicky {
+  display: block;
+  margin: auto;
+  width: 70%;
+  max-width: 350px;
+}

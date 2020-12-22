@@ -22,20 +22,35 @@ body {
   0% {
     background: white;
   }
-  20% {
+  10% {
     background: #EDAFB8;
   }
+  20% {
+    background: white;
+  }
+  30% {
+    background: #DEDBD2;
+  }
   40% {
+    background: white;
+  }
+  50% {
     background: #F7E1D7;
   }
   60% {
-    background: #DEDBD2;
+    background: white;
   }
-  80% {
+  70% {
     background: #B0C4B1;
   }
-  100% {
+  80% {
+    background: white;
+  }
+  90% {
     background: #faffc7;
+  }
+  100% {
+    background: #EDAFB8;
   }
 }
 

@@ -12,6 +12,33 @@ body, html {
   width: 100%;
 }
 
+body {
+  animation: bodybackground 360s infinite alternate; 
+
+}
+
+@keyframes bodybackground {
+  /* You could think of as "step 1" */
+  0% {
+    background: white;
+  }
+  20% {
+    background: #EDAFB8;
+  }
+  40% {
+    background: #F7E1D7;
+  }
+  60% {
+    background: #DEDBD2;
+  }
+  80% {
+    background: #B0C4B1;
+  }
+  100% {
+    background: #faffc7;
+  }
+}
+
 * {
   font-size: 60px;
   font-family: 'Vysokepismo';
@@ -19,15 +46,23 @@ body, html {
 }
 
 h1 {
-  font-size: 200%;
+  font-size: 250%;
   font-weight: normal;
   text-align: center;
+  margin: 50px 0 20px 0;
   letter-spacing: -7px;
+}
+
+#countdown {
+  text-align: center;
+  letter-spacing: -3px;
+  color: #555;
 }
 
 .postavicky {
   display: block;
   margin: auto;
-  width: 70%;
-  max-width: 350px;
+  margin-top: 30px;
+  width: 90%;
+  max-width: 400px;
 }

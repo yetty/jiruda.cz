@@ -35,7 +35,7 @@ var end = new Date('06/05/2021 2:00 PM');
             return;
         }
         var days = Math.floor(distance / _day);
-        var hours = Math.floor((distance % _day) / _hour);
+        var hours = Math.ceil((distance % _day) / _hour);
         var minutes = Math.floor((distance % _hour) / _minute);
         var seconds = Math.floor((distance % _minute) / _second);
         

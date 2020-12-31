@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jiřudáci.cz</title>
+<link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  
+<h1>Něco se chystá!</h1>
+<div id="countdown"></div>
+
+<img class="postavicky" src="./assets/postavicky.png" alt="Postavičky jdou kamsi.">
+
+<script>
+var end = new Date('06/05/2021 2:00 PM');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.ceil((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+        
+        if (hours == 1) { 
+          var txtHours = '1 hodinu';
+        } else if (hours == 0 || hours >= 5) {
+          var txtHours = hours + ' hodin';
+        } else {
+          var txtHours = hours + ' hodiny';
+        }
+        
+        document.getElementById('countdown').innerHTML = 'už za ' + days + ' dní' + ' a ' + txtHours;
+    }
+
+    showRemaining();
+    timer = setInterval(showRemaining, 30000);
+</script>
+</body>
+</html>
